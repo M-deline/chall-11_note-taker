@@ -1,0 +1,14 @@
+{
+    "notes": [
+        {
+            "title": "Test Title",
+            "text": "Test text",
+            "id": "0"
+        },
+        {
+            "title": "Delete Notes",
+            "text": "Test text 2",
+            "id": "1"
+        }
+    ]
+}

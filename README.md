@@ -1,4 +1,19 @@
-# chall-11_note-taker
+# Note Taker Application 
+## Overview & Description
+- 
+## Challenges & Successes
+- 
+## Technologies Used
+- 
+## Installation
+- git clone, install node, node server.js 
+
+## Contributions
+
+## Credits
+- 
+- 
+- 
 
 GIVEN a note-taking application
 WHEN I open the Note Taker
