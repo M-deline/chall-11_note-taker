@@ -2,7 +2,7 @@
 ## Overview & Description
 - 
 ## Challenges & Successes
-- 
+- using console in web browser to troubleshoot helped a lot 
 ## Technologies Used
 - 
 ## Installation
@@ -11,8 +11,8 @@
 ## Contributions
 
 ## Credits
-- 
-- 
+- https://stackoverflow.com/questions/32405812/failed-to-load-resource-neterr-file-not-found-loading-json-js
+- https://stackoverflow.com/questions/41965066/access-to-image-from-origin-null-has-been-blocked-by-cors-policy
 - 
 
 GIVEN a note-taking application
