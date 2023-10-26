@@ -1,27 +1,24 @@
 const router = require('express').Router();
-const { notes } = require('../../db/db')   
+const { notes } = require('../../db/db.json')   
 const { makeNewNote } = require('../../lib/notes');
 
 // const cors = require('cors');
 // const { arrayNotes } = require('../../db/db.json')
 
-
-
-
 router.get("/", (req, res) => {
-    res.json(notes);
+    res.text(notes);
 }
 );
 
 router.get('/notes', (req, res) => {
     let saved = notes;
-    res.json(saved);
+    res.text(saved);
 })
 
 router.post('/notes', (req, res) => {
     req.body.id = arrayNotes.length.toString();
     let note = makeNewNote(req.body, notes);
-    res.json(note);
+    res.text(note);
     })
 
     //delete 
