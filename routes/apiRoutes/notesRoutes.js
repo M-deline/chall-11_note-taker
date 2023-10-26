@@ -4,21 +4,28 @@ const { makeNewNote } = require('../../lib/notes');
 
 // const cors = require('cors');
 // const { arrayNotes } = require('../../db/db.json')
-
-router.get("/", (req, res) => {
-    res.text(notes);
-}
-);
-
+//SOMETHING WRONG WITH GET routers
+// router.get("/", (req, res) => {
+//     res.json(notes);
+//     res.status(200).json({status: '1', message: 'Success'});
+// }
+// );
+//says to replace with text instead of json 
+// The DOCTYPE response is indicative of you receiving HTML rather than a JSON response. 
 router.get('/notes', (req, res) => {
-    let saved = notes;
-    res.text(saved);
-})
+   let results = notes;
+   res.json (results);
+    });
 
 router.post('/notes', (req, res) => {
-    req.body.id = arrayNotes.length.toString();
-    let note = makeNewNote(req.body, notes);
-    res.text(note);
+    // req.body.id = arrayNotes.length.toString();
+    // let note = makeNewNote(req.body, notes);
+    // res.json(note);
+    if(notes){
+        req.body.id = notes.length.toString();
+    } else {
+        req.body.id = 0;}
+        res.json(makeNewNote(req.body, notes));
     })
 
     //delete 
