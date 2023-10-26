@@ -14,6 +14,8 @@
 - https://stackoverflow.com/questions/32405812/failed-to-load-resource-neterr-file-not-found-loading-json-js
 - https://stackoverflow.com/questions/41965066/access-to-image-from-origin-null-has-been-blocked-by-cors-policy
 - https://stackoverflow.com/questions/67252514/vm16611-uncaught-in-promise-syntaxerror-unexpected-token-s-in-json-at-positi
+- https://stackoverflow.com/questions/52919331/access-to-script-at-from-origin-null-has-been-blocked-by-cors-policy
+
 
 GIVEN a note-taking application
 WHEN I open the Note Taker

@@ -1,5 +1,5 @@
 const path = require('path');
-require('path').resolve(__dirname, '../../public/index.html');
+// require('path').resolve(__dirname, '../../public/index.html');
 const router = require('express').Router();
 
 // router.get('/', (req, res) => {
