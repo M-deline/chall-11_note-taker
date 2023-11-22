@@ -1,26 +1,27 @@
 const router = require('express').Router();
-const { notes } = require('../../db/db.json')   
-const { makeNewNote } = require('../../lib/notes');
+const { createNewNote, deleteNote } = require('../../lib/notes');
+let { notesArray } = require('../../db/db');
 
-
+// notes are available at api/notes in JSON 
 router.get('/notes', (req, res) => {
-   let results = notes;
-//    JSON.parse(results);
-    res.json(results);
-    });
-//router get Promise (route(req))
+  let results = notesArray;
+  res.json(results);
+});
+
 router.post('/notes', (req, res) => {
-    if(notes){
-        req.body.id = notes.length.toString();
-    } else {
-        req.body.id = 0;}
-        res.json(makeNewNote(req.body, notes));
-    })
+  // set id based on what the next index of the array will be
+  if(notesArray){
+  req.body.id = notesArray.length.toString();
+  } else 
+  {req.body.id = 0}
+  res.json(createNewNote(req.body, notesArray));
+});
 
-    //delete 
-    // router.delete('/notes/:id', (req, res) => {
-    //     deleteNote(arrayNotes, req.params.id);
-    //     res.json(arrayNotes);
-    // })
+// Route parameters :👌 
+router.delete('/notes/:id', async (req, res) => {
+  const { id } = req.params
+  notesArray = await deleteNote(id, notesArray);
+  res.json(notesArray);
+});
 
-    module.exports = router;
+module.exports = router;

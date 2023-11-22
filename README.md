@@ -15,7 +15,8 @@
 - https://stackoverflow.com/questions/41965066/access-to-image-from-origin-null-has-been-blocked-by-cors-policy
 - https://stackoverflow.com/questions/67252514/vm16611-uncaught-in-promise-syntaxerror-unexpected-token-s-in-json-at-positi
 - https://stackoverflow.com/questions/52919331/access-to-script-at-from-origin-null-has-been-blocked-by-cors-policy
-
+- https://expressjs.com/en/resources/middleware/body-parser.html#:~:text=The%20extended%20option%20allows%20to,qs%20library%20(when%20true%20).
+- https://aneeqa-k25.medium.com/creating-rest-api-routes-in-node-js-922069e59feb
 
 GIVEN a note-taking application
 WHEN I open the Note Taker
